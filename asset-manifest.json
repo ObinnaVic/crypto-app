@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/crypto-app/static/css/main.400d6c03.css",
+    "main.js": "/crypto-app/static/js/main.9cefd9d5.js",
+    "static/js/787.284a3ba0.chunk.js": "/crypto-app/static/js/787.284a3ba0.chunk.js",
+    "static/media/portfolio.webp": "/crypto-app/static/media/portfolio.f315f6a67bfc7b2f893d.webp",
+    "static/media/coingeckoApp.webp": "/crypto-app/static/media/coingeckoApp.1cbf57fd089af6b6f087.webp",
+    "static/media/coingeckoAppTwo.webp": "/crypto-app/static/media/coingeckoAppTwo.6117d8c7c2e341e29e71.webp",
+    "static/media/coinLogo.png": "/crypto-app/static/media/coinLogo.79fd2368a7006019ac30.png",
+    "static/media/SEGA.woff": "/crypto-app/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
+    "static/media/apple.svg": "/crypto-app/static/media/apple.96ad9334cece4371bb79dd1be1479fc5.svg",
+    "static/media/playstore.svg": "/crypto-app/static/media/playstore.636841a23677def653a8c6c236a4098d.svg",
+    "static/media/scan.svg": "/crypto-app/static/media/scan.818f65b291824c955a030931e1db9fd7.svg",
+    "index.html": "/crypto-app/index.html",
+    "main.400d6c03.css.map": "/crypto-app/static/css/main.400d6c03.css.map",
+    "main.9cefd9d5.js.map": "/crypto-app/static/js/main.9cefd9d5.js.map",
+    "787.284a3ba0.chunk.js.map": "/crypto-app/static/js/787.284a3ba0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.400d6c03.css",
+    "static/js/main.9cefd9d5.js"
+  ]
+}
