@@ -1,6 +1,7 @@
 {
   "name": "crypto-app",
   "version": "0.1.0",
+  "homepage": "https://obinnavic.github.io/crypto-app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-alice-carousel": "^2.6.4",
     "react-chartjs-2": "^4.3.1",
@@ -21,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

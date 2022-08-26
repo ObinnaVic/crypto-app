@@ -8,14 +8,13 @@ import Download from "./components/Download";
 import SingleCoin from "./components/Singlecoin";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
   const [user, setUser] = useState(null);
   return (
-    <BrowserRouter>
-      <div>
+      <>
         <SubNav />
         <Routes>
           <Route path="/" element={<NavBar />}>
@@ -28,8 +27,7 @@ function App() {
           </Route>
         </Routes>
         <Footer />
-      </div>
-    </BrowserRouter>
+      </>
   );
 }
 
