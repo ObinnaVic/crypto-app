@@ -2,21 +2,33 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "./context";
+import validator from "validator";
 
 const SignIn = ({ setUser }) => {
   const { darkMood } = useGlobalContext();
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !email) {
+    if (!name) {
       return;
     }
-    setUser({ name: name, email: email });
+    setUser({ name: name});
     navigate("/home");
   };
+
+  const validateEmail = (e) => {
+    var email = e.target.value;
+
+    if (validator.isEmail(email)) {
+      setMessage("Thank you");
+    } else {
+      setMessage("Please, enter valid Email!");
+    }
+  };
+
   return (
     <section
       className={
@@ -24,7 +36,7 @@ const SignIn = ({ setUser }) => {
           ? "d-flex flex-column justify-content-center align-items-center bg-light text-dark"
           : "d-flex flex-column justify-content-center align-items-center bg-dark text-light"
       }
-      style={{ height: "70vh" }}
+      style={{ height: "55vh" }}
     >
       <form
         onSubmit={handleSubmit}
@@ -45,12 +57,21 @@ const SignIn = ({ setUser }) => {
           Email
         </label>
         <input
-          type="text"
+          type="email"
           className="p-2 mb-2 w-100 border-0"
-          value={email}
-          id="email"
-          onChange={(e) => setEmail(e.target.value)}
+          // value={email}
+          id="userEmail"
+          onChange={(e) => validateEmail(e)}
         />
+        <br />
+        <span
+          style={{
+            fontWeight: "bold",
+            color: "red",
+          }}
+        >
+          {message}
+        </span>
         <button className="btn border-dark text-dark" type="submit">
           Sign Up
         </button>
