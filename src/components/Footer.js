@@ -7,9 +7,6 @@ const Footer = () => {
     <div className="d-flex flex-column align-items-center bg-secondary p-3">
       <img className="logo" src={coinLogo} alt="logo" />
       <div>
-        <Link className="text-light text-decoration-none me-1" to="/">
-          SignIn -
-        </Link>
         <span>
           <a
             className="text-light text-decoration-none me-1"

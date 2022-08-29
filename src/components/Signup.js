@@ -15,7 +15,7 @@ const SignIn = ({ setUser }) => {
     if (!name) {
       return;
     }
-    setUser({ name: name});
+    setUser({ name: name });
     navigate("/home");
   };
 
@@ -36,7 +36,7 @@ const SignIn = ({ setUser }) => {
           ? "d-flex flex-column justify-content-center align-items-center bg-light text-dark"
           : "d-flex flex-column justify-content-center align-items-center bg-dark text-light"
       }
-      style={{ height: "55vh" }}
+      style={{ height: "65vh" }}
     >
       <form
         onSubmit={handleSubmit}

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const SubNav = ({user}) => {
   const { darkMood, openNav, closeNav } = useGlobalContext();
-  if(!user) {
+  if (!user) {
     return (
       <main className={openNav ? "subnav open-subnav" : "subnav"}>
         <div className="close-icon">
