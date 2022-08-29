@@ -15,7 +15,7 @@ function App() {
   const [user, setUser] = useState(null);
   return (
       <>
-        <SubNav />
+        <SubNav user={user}/>
         <Routes>
           <Route path="/" element={<NavBar />}>
             <Route index element={<SignIn setUser={setUser} />} />
